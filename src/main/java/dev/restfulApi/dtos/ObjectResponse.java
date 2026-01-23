@@ -2,13 +2,17 @@ package dev.restfulApi.dtos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Map;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ObjectResponse {
 
     @JsonProperty("id")
@@ -19,10 +23,4 @@ public class ObjectResponse {
 
     @JsonProperty("data")
     private Map<String, Object> data;
-
-    @JsonProperty("createdAt")
-    private String createdAt;
-
-    @JsonProperty("updatedAt")
-    private String updatedAt;
 }
