@@ -23,4 +23,7 @@ public class ObjectResponse {
 
     @JsonProperty("data")
     private Map<String, Object> data;
+
+    @JsonProperty("createdAt")
+    private String createdAt;
 }
