@@ -26,4 +26,7 @@ public class ObjectResponse {
 
     @JsonProperty("createdAt")
     private String createdAt;
+
+    @JsonProperty("updatedAt")
+    private String updatedAt;
 }
