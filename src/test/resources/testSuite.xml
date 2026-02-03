@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RestfulApiDev Suite" thread-count="7" parallel="classes">
+    <test name="API Tests">
+        <classes>
+            <class name="dev.restfulApi.tests.GetObjectsListTest"/>
+            <class name="dev.restfulApi.tests.GetObjectsByIdsTest"/>
+            <class name="dev.restfulApi.tests.GetObjectTest"/>
+            <class name="dev.restfulApi.tests.CreateObjectTest"/>
+            <class name="dev.restfulApi.tests.UpdateObjectPutTest"/>
+            <class name="dev.restfulApi.tests.UpdateObjectPatchTest"/>
+            <class name="dev.restfulApi.tests.DeleteObjectTest"/>
+        </classes>
+    </test>
+</suite>

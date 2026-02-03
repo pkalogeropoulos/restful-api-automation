@@ -21,7 +21,7 @@ public abstract class TestBase {
         api = new ApiClient();
     }
 
-    protected static ObjectRequest sampleRequest() {
+    public static ObjectRequest sampleRequest() {
         ObjectRequest objReq = new ObjectRequest();
         objReq.setName("Test Device");
         objReq.setData(Map.of(
