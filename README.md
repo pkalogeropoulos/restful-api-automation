@@ -26,7 +26,8 @@ It includes clean architecture (clients + endpoints), environment configuration,
 ✅ GitHub Actions workflow (headless/CI-friendly)  
 ✅ Code quality gates (optional): Checkstyle/Spotless
 
-## Project Structure
+## 📁 Project Structure
+```
 project-root/
 ├── pom.xml
 ├── README.md
@@ -54,8 +55,11 @@ project-root/
 ├── testng.xml
 ├── schemas
 └── testdata
+```
 
-
+## Reporting (Allure)
+- mvn clean test
+- allure serve allure-results
 
 ## Configuration (env switching)
 Config files live in:
@@ -69,3 +73,9 @@ Example:
 Run with:
 ```bash
 mvn clean test -Denv=qa
+
+Pick environment + suite:
+
+mvn clean test -Denv=staging -DsuiteXmlFile=src/test/resources/testng.xml
+
+
